@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Angular App</title>
+</head>
+<body ng-cloak ng-controller="MainController">
+  
+  {{message}}
+  <hr>
+  <a href="#!/">/ (Root)</a>
+  <a href="#!/home">home</a>
+  <a href="#!/about">about</a>
+  <a href="#!/product">product</a>
+  <a href="#!/career">career</a>
+  <hr>
+
+  <ng-view></ng-view>
+
+  <script src="build/bundle.js"></script>
+</body>
+</html>
